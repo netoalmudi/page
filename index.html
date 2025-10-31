@@ -6,7 +6,7 @@
     <title>Neto Almudi Viagens</title>
     
     <style>
-        /* Define o body para ocupar 100% da área visível da tela */
+        /* 1. CONFIGURAÇÃO DA TELA (BODY) PARA CENTRALIZAR O CONTEÚDO PRINCIPAL */
         body {
             /* Remove as margens padrão do navegador */
             margin: 0;
@@ -17,29 +17,65 @@
             /* Habilita o Flexbox para centralização */
             display: flex;
             
-            /* Centraliza o conteúdo horizontalmente */
+            /* Centraliza a caixa principal (.conteudo-central) horizontalmente */
             justify-content: center;
             
-            /* Centraliza o conteúdo verticalmente */
+            /* Centraliza a caixa principal (.conteudo-central) verticalmente */
             align-items: center;
         }
 
-        /* Estilo da logomarca (Opcional, mas recomendado para controle de tamanho) */
+        /* 2. CONFIGURAÇÃO DA CAIXA PRINCIPAL QUE CONTÉM A IMAGEM E O TELEFONE */
+        .conteudo-central {
+            /* Define o conteúdo dentro desta caixa para ser centralizado (texto e imagem) */
+            text-align: center;
+            
+            /* Adiciona um pequeno espaço abaixo da caixa central (opcional) */
+            padding-bottom: 20px; 
+        }
+
+        /* 3. ESTILO DA LOGOMARCA */
         .logomarca {
-            /* Define um tamanho máximo para a imagem (ex: 50% da largura da tela) */
+            /* Define um tamanho máximo (ajuste se necessário) */
             max-width: 50%;
-            /* Garante que a altura se ajuste para não distorcer a imagem */
             height: auto;
+            
+            /* Adiciona uma margem abaixo da imagem para separá-la do telefone */
+            margin-bottom: 15px; 
+            
+            /* Garante que a imagem se comporte como um bloco para respeitar o margin-bottom */
+            display: block; 
+            
+            /* Garante a centralização da imagem dentro da caixa .conteudo-central */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 4. ESTILO DO TELEFONE */
+        .telefone {
+            font-size: 1.5em; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Deixa o texto em negrito */
+            color: #333; /* Cor do texto (mude se quiser) */
+            
+            /* Remove a decoração de link padrão (sublinhado) */
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     
-    <img 
-        src="logo.png" 
-        alt="Logomarca da Minha Empresa" 
-        class="logomarca"
-    >
+    <div class="conteudo-central">
+        
+        <img 
+            src="logo.png" 
+            alt="Logomarca da Minha Empresa" 
+            class="logomarca"
+        >
+        
+        <a href="tel:+5599999999999" class="telefone">
+            (41) 99813-6567
+        </a>
+        
+    </div>
 
 </body>
 </html>
