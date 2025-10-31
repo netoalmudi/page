@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neto Almudi Viagens</title>
+    
     <style>
+        /* Define o body para ocupar 100% da área visível da tela */
         body {
-            display: flex; /* Ativa o Flexbox para centralização */
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
-            min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
-            margin: 0; /* Remove margens padrão do body */
-            font-family: Arial, sans-serif; /* Define uma fonte padrão */
-            font-size: 2em; /* Tamanho maior para a frase */
-            color: #333; /* Cor do texto */
-            background-color: #f4f4f4; /* Cor de fundo suave */
+            /* Remove as margens padrão do navegador */
+            margin: 0;
+            
+            /* Define a altura mínima do corpo da página como a altura total da tela */
+            min-height: 100vh;
+            
+            /* Habilita o Flexbox para centralização */
+            display: flex;
+            
+            /* Centraliza o conteúdo horizontalmente */
+            justify-content: center;
+            
+            /* Centraliza o conteúdo verticalmente */
+            align-items: center;
+        }
+
+        /* Estilo da logomarca (Opcional, mas recomendado para controle de tamanho) */
+        .logomarca {
+            /* Define um tamanho máximo para a imagem (ex: 50% da largura da tela) */
+            max-width: 50%;
+            /* Garante que a altura se ajuste para não distorcer a imagem */
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Neto Almudi Viagens</h1>
+    
+    <img 
+        src="logo.png" 
+        alt="Logomarca da Minha Empresa" 
+        class="logomarca"
+    >
+
 </body>
 </html>
